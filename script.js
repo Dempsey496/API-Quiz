@@ -9,6 +9,8 @@ var scoreContainerEl=document.getElementById("scoreContainer");
 var index = 0;
 var timeLeft = 20;
 var score = 0;
+var highScore = "";
+var enterButton = document.getElementById("enter");
 var questionsSet = [
     {
         question: "What is an array wrapped in?",
@@ -16,19 +18,19 @@ var questionsSet = [
         answer: "square brackets",
     },
     {
-        question: "What color is the sky?",
-        answer_choices: ["red", "blue", "green", "triangle"],
-        answer: "blue",
+        question: "What does HTML stand for?",
+        answer_choices: ["hyper time me likey", "hyper text markup language", "hi tim mike lui", "hyper text madeup language"],
+        answer: "hyper text markup language",
     },
     {
-        question: "Demp about GENIUS?",
-        answer_choices: ["one", "two", "three", "four"],
-        answer: "two",
+        question: "What does CSS stand for?",
+        answer_choices: ["cross super simple", "cascading style sheet", "criminal stupid seriously", "cross style sheet"],
+        answer: "cascading style sheet",
     },
     {
-        question: "What is number one?",
-        answer_choices: ["one", "two", "three", "four"],
-        answer: "one",
+        question: "What is the world's most popular programming language?",
+        answer_choices: ["python", "C++", "savajcript", "javascript"],
+        answer: "javascript",
     },
 ]
 
@@ -68,7 +70,6 @@ function checkAnswer(event) {
     if(timeLeft > 0 && index < questionsSet.length){
         questionGen();
     }else{
-        startBtnEl.removeAttribute("style");
     questionContainer.setAttribute("style", "display: none;");
     scoreContainerEl.removeAttribute("style");
     index =0;
@@ -80,6 +81,11 @@ ans1El.addEventListener("click", checkAnswer);
 ans2El.addEventListener("click", checkAnswer);
 ans3El.addEventListener("click", checkAnswer);
 ans4El.addEventListener("click", checkAnswer);
+enterButton.addEventListener("click", function(){
+    var initials = document.getElementById("initials").value;
+    window.localStorage.setItem(initials, score)
+})
+
 startBtnEl.addEventListener("click", function () {
     questionGen();
     startTimer();
