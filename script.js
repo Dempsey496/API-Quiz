@@ -73,7 +73,7 @@ function checkAnswer(event) {
     questionContainer.setAttribute("style", "display: none;");
     scoreContainerEl.removeAttribute("style");
     index =0;
-    timeLeft=100;
+    timeLef=20;
     }
     
 }

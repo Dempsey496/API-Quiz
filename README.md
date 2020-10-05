@@ -11,4 +11,13 @@
 * I then created functions for generating questions and checking the answer.
 * After adding event listeners for all buttons, and starting different functions depending on which was clicked, all I had left to do is prompt the user to enter their highscore. 
 
+# URL
+
+* Site is deployed at: https://dempsey496.github.io/API-Quiz/
+
 # Screenshots
+
+[Site screenshot1](Screenshot 2020-10-05 165452.png)
+[Site sreenshot2](Screenshot 2020-10-05 165615.png)
+
+
