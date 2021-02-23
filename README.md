@@ -17,7 +17,7 @@
 
 # Screenshots
 
-[Site screenshot1](Screenshot 2020-10-05 165452.png)
-[Site sreenshot2](Screenshot 2020-10-05 165615.png)
+![Site screenshot1](screenshot1.png)
+![Site sreenshot2](screenshot2.png)
 
 
